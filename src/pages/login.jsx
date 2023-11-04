@@ -15,7 +15,7 @@ export default function Login() {
     setThemeMode("light")
 
     useEffect(() => {
-        if (isConnected) window.location.href = "https://mythvendix.000webhostapp.com/surat/judge/template/"
+        if (isConnected) window.location.href = "#"
     }, [isConnected])
 
     useEffect(() => {
