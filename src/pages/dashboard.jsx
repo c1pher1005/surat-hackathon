@@ -22,7 +22,7 @@ export default function Dashboard() {
       setTimeout(() => {
         sessionStorage.clear();
         window.location.href = "https://mythvendix.000webhostapp.com/surat/judge/template/";
-      }, 3000); // Replace 2000 with the desired duration in milliseconds (2 seconds in this example)
+      }, 1000); // Replace 2000 with the desired duration in milliseconds (2 seconds in this example)
     }
   }, [isConnected])
 
