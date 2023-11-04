@@ -18,11 +18,8 @@ export default function Dashboard() {
 
   useEffect(() => {
     if (!isConnected && logoutFlag) {
-      / Add a delay before redirecting
-      setTimeout(() => {
-        sessionStorage.clear();
-        window.location.href = "https://mythvendix.000webhostapp.com/surat/judge/template/";
-      }, 1000); // Replace 2000 with the desired duration in milliseconds (2 seconds in this example)
+      sessionStorage.clear()
+      window.location.href = "https://mythvendix.000webhostapp.com/surat/judge/template/"
     }
   }, [isConnected])
 
