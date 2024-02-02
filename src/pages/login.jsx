@@ -19,7 +19,7 @@ export default function Login() {
             // sessionStorage.clear();
             console.log("ok")
             window.location.href = "https://mythvendix.000webhostapp.com/surat/judge/template/";
-        }, 5000)
+        }, 10000)
     }, [isConnected])
 
     useEffect(() => {
