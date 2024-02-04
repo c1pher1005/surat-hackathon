@@ -18,7 +18,7 @@ export default function Login() {
         setTimeout(() => {
             // sessionStorage.clear();
             console.log("ok")
-            window.location.href = "https://mythvendix.000webhostapp.com/surat/judge/template/";
+            window.location.href = "";
         }, 10000)
     }, [isConnected])
 
